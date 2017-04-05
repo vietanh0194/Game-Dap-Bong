@@ -64,13 +64,13 @@ class GameScene: SKScene {
     func addScore(playWhoWon : SKSpriteNode) {
         ball.position = CGPoint(x:0 , y: 0)
         // cho vao 1 lan tang them 1 lan
-        //        ball.physicsBody?.applyImpulse(CGVector(dx: 5 , dy: 5))
+//                ball.physicsBody?.applyImpulse(CGVector(dx: 5 , dy: 5))
         if playWhoWon == main {
             score[0] += 1
-            //            ball.physicsBody?.applyImpulse(CGVector(dx: 5, dy: 5))
+                        ball.physicsBody?.applyImpulse(CGVector(dx: 5, dy: 5))
         }else if playWhoWon == enemy{
             score[1] += 1
-            //            ball.physicsBody?.applyImpulse(CGVector(dx: -5, dy: -5))
+                        ball.physicsBody?.applyImpulse(CGVector(dx: -5, dy: -5))
         }
         toplbl.text = "\(score[0])"
         botlbl.text = "\(score[1])"
