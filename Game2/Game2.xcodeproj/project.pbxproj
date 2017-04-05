@@ -25,6 +25,7 @@
 		56535C4D1E8CF7B300AAE575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56535C4C1E8CF7B300AAE575 /* Assets.xcassets */; };
 		56535C501E8CF7B300AAE575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56535C4E1E8CF7B300AAE575 /* LaunchScreen.storyboard */; };
 		56574E711E94EF6D00224A83 /* 1111.png in Resources */ = {isa = PBXBuildFile; fileRef = 56574E701E94EF6D00224A83 /* 1111.png */; };
+		56574E731E94F6FE00224A83 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 56574E721E94F6FE00224A83 /* 222.png */; };
 		568A6D4C1E91F8FA00DFA963 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 568A6D4B1E91F8FA00DFA963 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		56535C4F1E8CF7B300AAE575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56535C511E8CF7B300AAE575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56574E701E94EF6D00224A83 /* 1111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1111.png; sourceTree = "<group>"; };
+		56574E721E94F6FE00224A83 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 		568A6D4B1E91F8FA00DFA963 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				56574E701E94EF6D00224A83 /* 1111.png */,
+				56574E721E94F6FE00224A83 /* 222.png */,
 				5651E4781E924FC800CA4584 /* 38928818-Abstract-Cartoon-Platform-Background-Mobile-Stock-Vector.jpg */,
 				56523FCF1E9398DC00C1CEE9 /* Fade.mp3 */,
 				5651E4761E924FC400CA4584 /* start.png */,
@@ -166,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56574E731E94F6FE00224A83 /* 222.png in Resources */,
 				56535C4B1E8CF7B300AAE575 /* Main.storyboard in Resources */,
 				5651E46F1E9239BA00CA4584 /* LLPIXEL3.ttf in Resources */,
 				56535C421E8CF7B300AAE575 /* GameScene.sks in Resources */,
