@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ehn-yd-L8E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,85 +20,46 @@
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-Mx-xt8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTo-yi-ZTW">
+                                <rect key="frame" x="161" y="313" width="53" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="0.41598774412285267" blue="0.34114922020517402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Start:" destination="BV1-FR-VrT" eventType="touchUpInside" id="uXP-KO-Tvu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dTo-yi-ZTW" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="4Aw-2f-Xlp"/>
+                            <constraint firstItem="dTo-yi-ZTW" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="4Dl-oJ-WMO"/>
+                            <constraint firstItem="JUx-Mx-xt8" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="6MK-QG-Bv9"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="JUx-Mx-xt8" secondAttribute="bottom" id="9zW-Hg-7jH"/>
+                            <constraint firstAttribute="trailing" secondItem="JUx-Mx-xt8" secondAttribute="trailing" id="JNv-3G-crZ"/>
+                            <constraint firstItem="JUx-Mx-xt8" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="NvQ-N8-YHY"/>
+                            <constraint firstItem="JUx-Mx-xt8" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="Rnv-8f-jZQ"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="JUx-Mx-xt8" secondAttribute="bottom" id="XtS-pC-0yl"/>
+                            <constraint firstAttribute="trailing" secondItem="JUx-Mx-xt8" secondAttribute="trailing" id="kLS-be-Mad"/>
+                            <constraint firstItem="JUx-Mx-xt8" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="zQc-3a-BaS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn_start" destination="dTo-yi-ZTW" id="FpN-4q-aCi"/>
+                        <outlet property="imgView" destination="JUx-Mx-xt8" id="vgH-Kd-31G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1964" y="-162"/>
-        </scene>
-        <!--Game View-->
-        <scene sceneID="hxb-AT-N72">
-            <objects>
-                <viewController id="pAK-IQ-Jg6" customClass="GameView" customModule="Game2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wt3-08-ajF"/>
-                        <viewControllerLayoutGuide type="bottom" id="CGc-Hn-auG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dhK-uY-YAj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="38928818-Abstract-Cartoon-Platform-Background-Mobile-Stock-Vector.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-an-SiI">
-                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GI-mU-B7B">
-                                <rect key="frame" x="148" y="259" width="78" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="78" id="JHQ-Jd-vlf"/>
-                                    <constraint firstAttribute="height" constant="66" id="oJo-EB-UW6"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="start.png"/>
-                                <connections>
-                                    <action selector="btn_start:" destination="pAK-IQ-Jg6" eventType="touchUpInside" id="nlu-Mf-1vq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SoLo Ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6x-f8-nYx">
-                                <rect key="frame" x="113" y="114" width="166" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="1" green="0.61111078582835909" blue="0.98545965958498982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Eds-an-SiI" secondAttribute="trailing" id="Ced-d6-Xhq"/>
-                            <constraint firstItem="CGc-Hn-auG" firstAttribute="top" secondItem="7GI-mU-B7B" secondAttribute="bottom" constant="342" id="HDY-Sa-Ds7"/>
-                            <constraint firstItem="7GI-mU-B7B" firstAttribute="leading" secondItem="dhK-uY-YAj" secondAttribute="leadingMargin" constant="132" id="Q62-VC-lia"/>
-                            <constraint firstItem="Eds-an-SiI" firstAttribute="leading" secondItem="dhK-uY-YAj" secondAttribute="leading" id="SOX-F9-wfR"/>
-                            <constraint firstItem="Eds-an-SiI" firstAttribute="top" secondItem="dhK-uY-YAj" secondAttribute="top" constant="56" id="YbH-Nd-sly"/>
-                            <constraint firstItem="CGc-Hn-auG" firstAttribute="top" secondItem="Eds-an-SiI" secondAttribute="bottom" id="iRL-X9-d5F"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7GI-mU-B7B" secondAttribute="trailing" constant="133" id="l9g-nl-ClQ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="EUZ-rU-Pau"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekq-IP-mAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1140" y="-162.3688155922039"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="zY3-BN-0mU">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ehn-yd-L8E" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cMA-aA-7XJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="pAK-IQ-Jg6" kind="relationship" relationship="rootViewController" id="cja-F7-cas"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BLm-AR-ola" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="200.80000000000001" y="-162.3688155922039"/>
+            <point key="canvasLocation" x="1964" y="-162.3688155922039"/>
         </scene>
     </scenes>
     <resources>
-        <image name="38928818-Abstract-Cartoon-Platform-Background-Mobile-Stock-Vector.jpg" width="976" height="1300"/>
-        <image name="start.png" width="1300" height="1300"/>
+        <image name="bg" width="249" height="379"/>
     </resources>
 </document>

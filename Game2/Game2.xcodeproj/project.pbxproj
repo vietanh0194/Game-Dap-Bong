@@ -24,7 +24,7 @@
 		56535C4B1E8CF7B300AAE575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56535C491E8CF7B300AAE575 /* Main.storyboard */; };
 		56535C4D1E8CF7B300AAE575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56535C4C1E8CF7B300AAE575 /* Assets.xcassets */; };
 		56535C501E8CF7B300AAE575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56535C4E1E8CF7B300AAE575 /* LaunchScreen.storyboard */; };
-		56574E511E94DDD200224A83 /* 1111.png in Resources */ = {isa = PBXBuildFile; fileRef = 56574E501E94DDD200224A83 /* 1111.png */; };
+		56574E711E94EF6D00224A83 /* 1111.png in Resources */ = {isa = PBXBuildFile; fileRef = 56574E701E94EF6D00224A83 /* 1111.png */; };
 		568A6D4C1E91F8FA00DFA963 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 568A6D4B1E91F8FA00DFA963 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		56535C4C1E8CF7B300AAE575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56535C4F1E8CF7B300AAE575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56535C511E8CF7B300AAE575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56574E501E94DDD200224A83 /* 1111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1111.png; path = ../1111.png; sourceTree = "<group>"; };
+		56574E701E94EF6D00224A83 /* 1111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1111.png; sourceTree = "<group>"; };
 		568A6D4B1E91F8FA00DFA963 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +82,7 @@
 		56535C3E1E8CF7B300AAE575 /* Game2 */ = {
 			isa = PBXGroup;
 			children = (
-				56574E501E94DDD200224A83 /* 1111.png */,
+				56574E701E94EF6D00224A83 /* 1111.png */,
 				5651E4781E924FC800CA4584 /* 38928818-Abstract-Cartoon-Platform-Background-Mobile-Stock-Vector.jpg */,
 				56523FCF1E9398DC00C1CEE9 /* Fade.mp3 */,
 				5651E4761E924FC400CA4584 /* start.png */,
@@ -178,9 +178,9 @@
 				5651E4771E924FC400CA4584 /* start.png in Resources */,
 				568A6D4C1E91F8FA00DFA963 /* bg.jpg in Resources */,
 				56523FF21E93A46700C1CEE9 /* brick.wav in Resources */,
-				56574E511E94DDD200224A83 /* 1111.png in Resources */,
 				56535C441E8CF7B300AAE575 /* Actions.sks in Resources */,
 				564BE4551E948E67001E6B72 /* Untitled.png in Resources */,
+				56574E711E94EF6D00224A83 /* 1111.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
