@@ -42,10 +42,10 @@ class GameScene: SKScene {
         botlbl = self.childNode(withName: "botlbl") as! SKLabelNode
         ball = self.childNode(withName: "Ball") as! SKSpriteNode
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
-        enemy.position.y = (self.frame.height / 2) - 100
+        enemy.position.y = (self.frame.height / 2) - 150
         
         main = self.childNode(withName: "main") as! SKSpriteNode
-        main.position.y = (-self.frame.height / 2) + 100
+        main.position.y = (-self.frame.height / 2) + 150
         //lam bong chuyen dong va quy dinh toc do
         //        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         let border = SKPhysicsBody(edgeLoopFrom : self.frame)
@@ -133,10 +133,10 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         
         
-        if ball.position.y <= main.position.y - 30 {
+        if ball.position.y <= main.position.y - 20 {
             addScore(playWhoWon: enemy)
         }
-        else if ball.position.y >= enemy.position.y + 30 {
+        else if ball.position.y >= enemy.position.y + 20 {
             addScore(playWhoWon: main)
           
         }
